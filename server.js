@@ -6,7 +6,7 @@ var app = express();
 app.use(express.static(__dirname + '/public'));
 
 
-//var db = require('./database/db.js');
+var db = require('./database/db.js');
 
 // Initialize the app.
 var server = app.listen(process.env.PORT || 8080, function () {
