@@ -9,6 +9,9 @@ var pgp = require('pg-promise')(options);
 var connectionString = process.env.DATABASE_URL;
 var db = pgp(connectionString);
 
+console.log(connectionString);
+console.log(db);
+
 // Create a database variable outside of the database connection callback to reuse the connection pool in your app.
 //var db;
 
