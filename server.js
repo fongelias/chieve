@@ -10,9 +10,9 @@ var db = require('./database/db.js');
 
 // Initialize the app.
 var server = app.listen(process.env.PORT || 8080, function () {
-var port = server.address().port;
-console.log("App now running on port", port);
-
+  var port = server.address().port;
+  console.log("App now running on port", port);
+});
 
 //Placeholder Password: 5f4dcc3b5aa765d61d8327deb882cf99
 
