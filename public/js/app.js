@@ -33,7 +33,7 @@ angular.module("contactsApp", ['ngRoute'])
             //url sent to $http maps to API endpoints
             return $http.get("/contacts").
                 then(function(response) {
-                    return response;
+                    alert(response);
                 }, function(response) {
                     alert("Error finding contacts.");
                 });
