@@ -43,7 +43,7 @@ function handleError(res, reason, message, code) {
  */
 
  app.get("/contacts", function (request, response) {
-    response.send("hello world");
+    response.send(result);
     /*db.query('SELECT * FROM users', function(err, result) {
       done();
       if (err)
