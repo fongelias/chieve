@@ -43,12 +43,13 @@ function handleError(res, reason, message, code) {
  */
 
  app.get("/contacts", function (request, response) {
-    db.query('SELECT * FROM users', function(err, result) {
+    response.send("hello world");
+    /*db.query('SELECT * FROM users', function(err, result) {
       done();
       if (err)
        { handleError(res, err.message, "Failed to get contacts."); }
       else
        { res.status(200).json(result); }
-    });
+    });*/
 
 });
