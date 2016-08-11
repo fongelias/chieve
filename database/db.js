@@ -9,8 +9,6 @@ var pgp = require('pg-promise')(options);
 var connectionString = process.env.DATABASE_URL;
 var db = pgp(connectionString);
 
-console.log(connectionString);
-console.log(db);
 
 // Create a database variable outside of the database connection callback to reuse the connection pool in your app.
 //var db;
@@ -33,7 +31,8 @@ module.exports = {
 };
 
 function getAllUsers(req, res, next) {
-  db.any('select * from users')
+	res.send("chroo");
+  /*db.any('select * from users')
     .then(function (data) {
       res.status(200)
         .json({
@@ -44,5 +43,5 @@ function getAllUsers(req, res, next) {
     })
     .catch(function (err) {
       return next(err);
-    });
+    });*/
 }
