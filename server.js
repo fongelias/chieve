@@ -30,3 +30,5 @@ function handleError(res, reason, message, code) {
  *    POST: creates a new contact
  */
 router.get('/contacts', db.getAllUsers);
+
+module.exports = router;
