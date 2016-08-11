@@ -42,7 +42,7 @@ function handleError(res, reason, message, code) {
  *    POST: creates a new contact
  */
 
- app.get("/", function (request, response) {
+ app.get("/contacts", function (request, response) {
   res.send('hello world');
     /*db.query('SELECT * FROM users', function(err, result) {
       done();
