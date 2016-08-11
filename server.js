@@ -1,6 +1,6 @@
-var express = require("express"); //Node module
-var path = require("path");
-var pg = require("pg"); //Node module
+var express = require(__dirname + "express"); //Node module
+var path = require(__dirname + "path");
+var pg = require(__dirname + "pg"); //Node module
 
 var app = express();
 app.use(express.static(__dirname + '/public'));
