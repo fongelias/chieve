@@ -48,7 +48,7 @@ function handleError(res, reason, message, code) {
       if (err)
        { handleError(res, err.message, "Failed to get contacts."); }
       else
-       { response.status(200).json(result); }
+       { response.send("hey man") }
     });
 
 });
