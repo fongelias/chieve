@@ -6,12 +6,14 @@ var options = {
 };
 
 var pgp = require('pg-promise')(options);
+var connectionString = process.env.DATABASE_URL;
+var db = pgp(connectionString);
 
 // Create a database variable outside of the database connection callback to reuse the connection pool in your app.
-var db;
+//var db;
 
 // Connect to the database before starting the application server. 
-pg.connect(process.env.DATABASE_URL, function(err, database) {
+/*pg.connect(process.env.DATABASE_URL, function(err, database) {
   if (err) {
     console.log(err);
     process.exit(1);
@@ -21,7 +23,7 @@ pg.connect(process.env.DATABASE_URL, function(err, database) {
   db = database;
   console.log("Database connection ready");
 
-});
+});*/
 
 module.exports = {
 	getAllUsers: getAllUsers
