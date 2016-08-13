@@ -1,9 +1,11 @@
 var express = require("express"); //Node module
 var path = require("path");
 var pg = require("pg"); //Node module
+var bodyParser = require("body-parser"); //Node module
 
 var app = express();
 app.use(express.static(__dirname + '/public'));
+app.use(bodyParser.json());
 
 // Create a database variable outside of the database connection callback to reuse the connection pool in your app.
 var db;
