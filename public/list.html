@@ -17,7 +17,7 @@
     <tbody>
       <tr ng-repeat="contact in contacts" style="cursor:pointer">
         <td>
-          <a ng-href="#/contact/{{contact}}">{{ contact}}</a>
+          <a ng-href="#/contact/{{contact}}">{{ contact.email}}{{ contact.first_name}}</a>
         </td>
       </tr>
     </tbody>
