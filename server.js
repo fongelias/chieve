@@ -1,6 +1,7 @@
 var express = require("express"); //Node module
 var path = require("path");
 var pg = require("pg"); //Node module
+var bodyParser = require("body-parser"); //Node module
 
 var app = express();
 app.use(express.static(__dirname + '/public'));
@@ -51,7 +52,7 @@ function handleError(res, reason, message, code) {
         if (err)
          { console.error(err); response.send("Error " + err); }
         else
-         { response.json(result) }
+         { response.status(200).json(result) }
       });
     });
     /*db.query('SELECT * FROM users', function(err, result) {
