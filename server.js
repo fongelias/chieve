@@ -43,7 +43,17 @@ function handleError(res, reason, message, code) {
  */
 
  app.get("/contacts", function (request, response) {
-    response.send("hello");
+    //response.send("hello");
+
+    pg.connect(process.env.DATABASE_URL, function(err, client, done) {
+      client.query('SELECT * FROM users', function(err, result) {
+        done();
+        if (err)
+         { console.error(err); response.send("Error " + err); }
+        else
+         { response.send({results: result.rows}); }
+      });
+    });
     /*db.query('SELECT * FROM users', function(err, result) {
       done();
       if (err)
