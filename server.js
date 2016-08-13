@@ -51,7 +51,7 @@ function handleError(res, reason, message, code) {
         if (err)
          { console.error(err); response.send("Error " + err); }
         else
-         { response.send(result.rows) }
+         { response.json(result) }
       });
     });
     /*db.query('SELECT * FROM users', function(err, result) {
