@@ -1,0 +1,30 @@
+<!doctype html>
+<html ng-app="chieveApp">
+	<head>
+    <!--########## LIBRARIES ##########-->
+    <!-- jQuery Library -->
+    <script src="public/lib/jquery.min.3.1.0/jquery.min.3.1.0.js"></script>
+    <!-- jQuery-UI Library and Touch Punch -->
+    <script src="public/lib/jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+    <script src="public/lib/jquery.ui.touch-punch/jquery.ui.touch-punch.min.js"></script>
+    <!-- Angular Library -->
+	<script src="public/lib/angular.1.2.30/angular.min.1.2.30.js"></script>
+    <script src="public/lib/angular-route.1.2.30/angular-route.min.1.2.30.js"></script>
+    <!--########## POLYFILLS ##########-->
+    <!-- Drag-Drop Polyfill -->
+    <!--script src="public/lib/drag-drop-polyfill/release/drag-drop-polyfill.min.js"></script-->
+    <!--########## CUSTOM ##########-->
+    <!-- Angular App -->
+	<script src="app/app.js"></script>
+    <!-- Styles and Scripts -->
+    <link rel="stylesheet" ng-href="public/assets/mainCSS/normalize.css"></link>
+    <link rel="stylesheet" ng-href="public/assets/mainCSS/chieveBase.css"></link>
+    <!-- Dynamic Attributes -->
+    <link rel="stylesheet" ng-href="{{ css }}"></link>
+    <script ng-src="{{ js }}"></script>
+    <title>{{ title }}</title>
+	</head>
+	<body>
+		 <div ng-view></div>
+	</body>
+</html>

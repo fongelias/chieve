@@ -1,0 +1,108 @@
+{
+  "name": "drag-drop-polyfill",
+  "version": "2.0.0-beta.2",
+  "description": "Polyfill for making HTML5 drag and drop possible in all browsers.",
+  "main": "release/drag-drop-polyfill.min.js",
+  "homepage": "http://timruffles.github.io/ios-html5-drag-drop-shim/demo/",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/timruffles/ios-html5-drag-drop-shim.git"
+  },
+  "keywords": [
+    "dragdrop",
+    "drag-drop",
+    "html5",
+    "shim",
+    "mobile",
+    "polyfill"
+  ],
+  "author": {
+    "name": "Tim Ruffles",
+    "email": "me@truffles.me.uk"
+  },
+  "contributors": [
+    {
+      "name": "Stefan Steinhart",
+      "email": "stefansteinhart@artec-engineering.com"
+    },
+    {
+      "name": "Kaur Kuut",
+      "email": "strom@nevermore.ee"
+    },
+    {
+      "name": "Tim Ruffles",
+      "email": "me@truffles.me.uk"
+    },
+    {
+      "name": "Joshua-Smith",
+      "email": "noidea@example.com"
+    },
+    {
+      "name": "Jason Hickner",
+      "email": "jhickner@gmail.com"
+    },
+    {
+      "name": "Matt Oakley",
+      "email": "matt@annaandmatt.net"
+    },
+    {
+      "name": "James Smith",
+      "email": "jellyes2@gmail.com"
+    },
+    {
+      "name": "James Shore",
+      "email": "shore.james@gmail.com"
+    },
+    {
+      "name": "Paul Shirren",
+      "email": "shirro@shirro.com"
+    }
+  ],
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/timruffles/ios-html5-drag-drop-shim/issues"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-bump": "^0.7.0",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-connect": "^0.11.2",
+    "grunt-contrib-copy": "^0.7.0",
+    "grunt-contrib-uglify": "^0.11.1",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-npm": "0.0.2",
+    "grunt-ts": "^5.3.2",
+    "grunt-tslint": "^3.0.3",
+    "tslint": "^3.4.0",
+    "typescript": "^1.8.2"
+  },
+  "gitHead": "d11a2adab36c76276f134d760e4fa6b7f6956f24",
+  "_id": "drag-drop-polyfill@2.0.0-beta.2",
+  "_shasum": "49bafc24a454c3f4f64f9f2ffdefadb25d43581b",
+  "_from": "drag-drop-polyfill@latest",
+  "_npmVersion": "3.10.6",
+  "_nodeVersion": "4.5.0",
+  "_npmUser": {
+    "name": "reppners",
+    "email": "stefanreppner@gmail.com"
+  },
+  "dist": {
+    "shasum": "49bafc24a454c3f4f64f9f2ffdefadb25d43581b",
+    "tarball": "https://registry.npmjs.org/drag-drop-polyfill/-/drag-drop-polyfill-2.0.0-beta.2.tgz"
+  },
+  "maintainers": [
+    {
+      "name": "reppners",
+      "email": "stefanreppner@gmail.com"
+    }
+  ],
+  "_npmOperationalInternal": {
+    "host": "packages-16-east.internal.npmjs.com",
+    "tmp": "tmp/drag-drop-polyfill-2.0.0-beta.2.tgz_1473762468545_0.9533851896412671"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/drag-drop-polyfill/-/drag-drop-polyfill-2.0.0-beta.2.tgz"
+}

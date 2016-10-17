@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/chrisckchang/mean-contactlist",
   "dependencies": {
+    "crypto": "0.0.3",
     "express": "^4.13.3",
     "pg": "4.x"
   }

@@ -1,0 +1,38 @@
+<div id="{{ listIdAttr }}">
+	<div data-ng-repeat="item in dragDropList">
+		<div class="drag-drop-container" id="{{ 'drag-drop-' + item.id }}">
+			<div class="inner-container">
+				<div class="contents">
+					<div class="input-line">
+						<input type="text" placeholder="create a new task" class="task-input left" ng-model="item.name">
+					</div>
+					<div class="expanded-info">
+						<textarea class="task-description" ng-model="item.description"></textarea>
+					</div>
+				</div>
+				<div class="more-options" data-id="{{ item.id }}">
+					<div class="inner-container">
+						<div class="option-container option-1" data-id="{{ item.id }}">
+							<p>FIN</p>
+							<div class="circle-option">
+								<div class="inner-icon checkmark"></div>
+							</div>
+						</div>
+						<div class="option-container option-2" data-id="{{ item.id }}">
+							<p>DEL</p>
+							<div class="circle-option">
+								<div class="inner-icon x-cross"></div>
+							</div>
+						</div>
+						<div class="option-container option-3" data-id="{{ item.id }}">
+							<p>HID</p>
+							<div class="inner-icon circle-option">
+								<div class="inner-icon chevron"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

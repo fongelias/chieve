@@ -1,14 +1,11 @@
 var express = require("express"); //Node module
 var path = require("path");
 var pg = require("pg"); //Node module
-//var crypto = require('crypto'); //Node module
+var crypto = require('crypto'); //Node module
 
 
 var app = express();
 app.use(express.static(__dirname + '/public'));
-
-// Create a database variable outside of the database connection callback to reuse the connection pool in your app.
-var db;
 
 // Starting the application server. 
 var server = app.listen(process.env.PORT || 8080, function () {
@@ -16,16 +13,10 @@ var server = app.listen(process.env.PORT || 8080, function () {
   console.log("App now running on port", port);
 });    
 
-//Placeholder Password: 5f4dcc3b5aa765d61d8327deb882cf99
+//Placeholder Password, password: 5f4dcc3b5aa765d61d8327deb882cf99
 
 
 // LOGIN API ROUTES BELOW
-
-// Generic error handler used by all endpoints.
-function handleError(res, reason, message, code) {
-  console.log("ERROR: " + reason);
-  res.status(code || 500).json({"error": message});
-}
 
 /*  "/contacts"
  *    GET: finds all contacts
@@ -43,3 +34,5 @@ function handleError(res, reason, message, code) {
       });
     });
 });
+
+app.post()
