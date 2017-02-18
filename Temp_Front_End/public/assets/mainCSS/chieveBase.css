@@ -67,6 +67,7 @@ helper classes, and states.
 /*--- Elements ---*/
 body {
 	font-family: 'Amiri-Regular';
+	overflow: hidden;
 }
 
 
